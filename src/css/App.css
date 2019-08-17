@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-scale infinite 8s linear;
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.header-bv {
+  background-color: #41aaaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.branch-aqua {
+  color: #41aaaa;
+}
+.branch-light-blue {
+  color: #A0DDF2;
+}
+.branch-beige {
+  color: #D1AC84;
+}
+.branch-orange {
+  color: #F78A1C;
+  font-size: calc(40px + 5vmin);
+}
+
+.main-sign {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  line-height: 90%;
+  display: flex;
+}
+
+@media screen and (max-width: 885px) {
+  .main-sign {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    line-height: 40%;
+    display: flex;
+  }
+  .branch-orange {
+    color: #F78A1C;
+    font-size: calc(20px + 3vmin);
+  }
+  .main-sign div h2 {
+    font-size: calc(12px + 3vmin);
+  }
+  .main-sign div img {
+    width: 10vmin;
+  }
+  #dropdown {
+    display: block;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3);
+  }
+}
+
+/* Nav mobile */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #F78A1C;
+  padding: 10px 5px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtn {
+  height: 100%;
+}
+
+.dropdown:hover {
+  float: none;
+}
+
+.navbar a:active, .dropdown:active .dropbtn {
+  background-color: #41aaaaa8;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f900;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px 5px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  display: inline;
+  text-align: left;
+  font-size: calc(6px + 2vmin)
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(209, 172, 132, 0.75);
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline;
+}
+
+#form {
+  width: 100%;
+  position: relative;
+  margin-top: 20%;
+  min-height: 100vh;
+}
+.bg-image-form {
+  max-height: 100vh;
+}
+@media screen and (min-width: 886px){
+  #dropdown {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+.form-title {
+  width: 90%;
+  margin-left: 10%;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.form-title::after {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 5px;
+  background: #41aaaa;
+  content: "";
+  width: 100%;
+  display: block;
+}
